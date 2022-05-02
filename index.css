@@ -24,7 +24,7 @@ body {
     grid-template-columns: 1fr 3fr;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     body {
         grid-template-columns: 1fr;
     }
