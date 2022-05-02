@@ -5,8 +5,6 @@ function Books(title,author,pages,read) {
     this.read = read;
 }
 
-
-
 const formEl = document.querySelector('.form');
 const titleEl = document.querySelector('#title');
 const authorEl = document.querySelector('#author');
@@ -73,7 +71,6 @@ function renderCards() {
 
     library.forEach(book => {
        
-
         if (book.read) {
             cardContainerEl.innerHTML += `
                 <div class="card">
@@ -93,7 +90,6 @@ function renderCards() {
                     </div>
                 </div>
                 `; 
-                
         } else {
             cardContainerEl.innerHTML += `
                 <div class="card">
@@ -113,7 +109,7 @@ function renderCards() {
                     </div>
                 </div>
             `;
-         }     
+        }     
     });
     
     buttonsArr = [...document.querySelectorAll('.remove-card')]
@@ -141,6 +137,8 @@ function removeCard() {
 
     renderCards();
 }
+
+
 
 window.addEventListener('click', (e) => {
 
